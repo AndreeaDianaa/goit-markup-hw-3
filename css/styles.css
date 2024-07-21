@@ -5,10 +5,27 @@
   --header-background-color: #e7e9fc;
   --white-text: #ffffff;
   --blue-color: #4d5ae5;
-  --hover-focus-color: #404BBF;
-  --cloud-color:#F4F4FD;
+  --hover-focus-color: #404bbf;
+  --cloud-color: #f4f4fd;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -16,13 +33,47 @@ body {
   background-color: var(--background-color);
 }
 
+.container {
+  width: 1158px 100vh;
+  margin: 0 auto;
+}
+
 .global-header {
   background-color: var(--header-background-color);
+  border-bottom: 1px solid var(--header-background-color);
+}
+
+.logo-container {
+  padding-left: 156px;
+  margin-right: 76px;
 }
 
 .global-header a,
 .global-footer a {
   text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.nav-container,
+.address-container {
+  display: flex;
+}
+
+.main-navigation,
+.contact-info {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-info {
+  margin-left: 332px;
+  padding-right: 156px;
 }
 
 .main-navigation,
@@ -62,11 +113,11 @@ body {
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-    color: var(--hover-focus-color);
+  color: var(--hover-focus-color);
 }
 
 .address-container {
-    font-style: normal;
+  font-style: normal;
 }
 
 .contact-info a {
@@ -79,11 +130,15 @@ body {
 
 .contact-info a:hover,
 .contact-info a:focus {
-    color: var(--hover-focus-color);
+  color: var(--hover-focus-color);
 }
 
 .main-section {
   background-color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-title {
@@ -93,6 +148,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--white-text);
   text-align: center;
+  padding-top: 260px;
+  margin-bottom: 48px;
 }
 
 .main-button {
@@ -103,11 +160,14 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-text);
   background-color: var(--blue-color);
+  padding: 16px 32px 16px 32px;
+  margin-bottom: 188px;
+  border-radius: 4px 0px 0px 0px;
 }
 
 .main-button:hover,
 .main-button:focus {
-    background-color: var(--hover-focus-color);
+  background-color: var(--hover-focus-color);
 }
 
 .heading-services {
@@ -134,12 +194,12 @@ body {
   text-transform: capitalize;
 }
 
-.our-team-section{
-    background-color: var(--cloud-color);
+.our-team-section {
+  background-color: var(--cloud-color);
 }
 
-.team-members{
-   background-color: #ffffff; 
+.team-members {
+  background-color: #ffffff;
 }
 
 .team-members-name,
