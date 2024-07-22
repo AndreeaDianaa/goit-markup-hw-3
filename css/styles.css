@@ -36,6 +36,7 @@ body {
 .container {
   width: 1158px 100vh;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .global-header {
@@ -56,17 +57,18 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .nav-container,
 .address-container {
   display: flex;
+  align-items: center;
 }
 
 .main-navigation,
 .contact-info {
+  align-items: center;
   display: flex;
   gap: 40px;
 }
@@ -147,12 +149,14 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-text);
+  max-width: 496px;
   text-align: center;
   padding-top: 260px;
   margin-bottom: 48px;
 }
 
 .main-button {
+  display: block;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
@@ -160,14 +164,32 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-text);
   background-color: var(--blue-color);
+  min-width: 169px;
+  height: 56px;
   padding: 16px 32px 16px 32px;
   margin-bottom: 188px;
-  border-radius: 4px 0px 0px 0px;
+  border-radius: 4px;
+  border: none;
 }
 
 .main-button:hover,
 .main-button:focus {
   background-color: var(--hover-focus-color);
+}
+
+.services {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 .heading-services {
@@ -176,6 +198,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  margin-bottom: 8px;
 }
 
 .paragraph-services {
@@ -192,10 +215,23 @@ body {
   color: var(--secondary-text-color);
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .our-team-section {
   background-color: var(--cloud-color);
+  padding: 120px 0;
+}
+
+.members-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.team-member {
+  padding: 32px 0; 
 }
 
 .team-members {
@@ -209,6 +245,15 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+
+}
+
+.team-members-container{
+padding: 32px 0; 
+}
+
+.profession{
+  text-align: center;
 }
 
 .profession,
@@ -218,9 +263,42 @@ body {
   letter-spacing: 0.02em;
 }
 
+.team-members-name {
+  text-align: center; 
+  margin-bottom: 8px;
+}
+
+.our-portfolio {
+ padding-top: 120px;
+  padding-bottom: 120px; 
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-div-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc; 
+  border-top: none;
+  margin-bottom: 8px;  
+}
+
 .global-footer {
   background-color: #2e2f42;
+   padding: 100px; 
 }
+
+.footer-container a{
+   display: inline-block;
+   margin-bottom: 16px;
+}
+
 
 .white-logo {
   font-family: "Raleway", sans-serif;
@@ -236,4 +314,5 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--cloud-color);
+  max-width: 264px;
 }
