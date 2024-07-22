@@ -57,6 +57,7 @@ body {
 .nav-container,
 .address-container {
   display: flex;
+  align-items: center;
 }
 
 .main-navigation,
@@ -64,11 +65,14 @@ body {
   align-items: center;
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
+ .main-navigation-items{
+  padding: 24px 0;
+ }
 
 .contact-info {
   margin-left: 332px;
+  padding: 24px 0;
 }
 
 .main-navigation,
