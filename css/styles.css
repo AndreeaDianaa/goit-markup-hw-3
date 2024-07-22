@@ -66,13 +66,12 @@ body {
   display: flex;
   gap: 40px;
 }
- .main-navigation-items{
+ .main-navigation-items, .info-items {
   padding: 24px 0;
  }
 
 .contact-info {
   margin-left: 332px;
-  padding: 24px 0;
 }
 
 .main-navigation,
