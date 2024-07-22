@@ -33,12 +33,6 @@ body {
   background-color: var(--background-color);
 }
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .global-header {
   background-color: var(--header-background-color);
   border-bottom: 1px solid var(--header-background-color);
@@ -49,16 +43,20 @@ body {
   text-decoration: none;
 }
 
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .nav-container,
 .address-container {
   display: flex;
-  align-items: center;
 }
 
 .main-navigation,
@@ -66,15 +64,11 @@ body {
   align-items: center;
   display: flex;
   gap: 40px;
-}
-
-.navigation-item {
   padding: 24px 0;
 }
 
 .contact-info {
   margin-left: 332px;
-  padding-right: 156px;
 }
 
 .main-navigation,
@@ -93,8 +87,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--blue-color);
   text-transform: uppercase;
-  padding-left: 156px;
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .black-logo {
@@ -119,10 +113,6 @@ body {
   color: var(--hover-focus-color);
 }
 
-.address-container {
-  font-style: normal;
-}
-
 .contact-info a {
   font-size: 16px;
   font-weight: 400;
@@ -141,8 +131,6 @@ body {
   padding: 188px 0;
 }
 
-
-
 .main-title {
   font-size: 56px;
   font-weight: 700;
@@ -153,7 +141,7 @@ body {
   text-align: center;
   margin-bottom: 48px;
   margin-left: auto;
-margin-right: auto;
+  margin-right: auto;
 }
 
 .main-button {
@@ -168,8 +156,7 @@ margin-right: auto;
   min-width: 169px;
   height: 56px;
   padding: 16px 32px 16px 32px;
-margin-left: auto;
-margin-right: auto;
+  margin: auto;
   border-radius: 4px;
   border: none;
 }
@@ -248,10 +235,8 @@ margin-right: auto;
 .team-members {
   background-color: #ffffff;
   flex-basis: calc((100% - 72px) / 4);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-members-name,
